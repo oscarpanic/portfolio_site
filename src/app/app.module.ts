@@ -7,20 +7,24 @@ import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { WINDOW_PROVIDERS } from "./window.service";
+import { TitleComponent } from './title/title.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    TitleComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [ WINDOW_PROVIDERS ],
+  bootstrap: [ AppComponent ]
 })
 export class AppModule { }
